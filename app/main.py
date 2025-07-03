@@ -21,5 +21,5 @@ async def get_report(report_id: int):
 
     # simulate a slow response
     api_hit_time = datetime.datetime.now()
-    await asyncio.sleep(10)
+    await asyncio.sleep(30)
     return {"report_id": report_id, "entry_time": str(api_hit_time), "exit_time": str(datetime.datetime.now())}
